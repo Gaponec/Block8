@@ -24,8 +24,6 @@ public class BufferedArrayIterator<T> implements Iterator<T> {
 
     @Override
     public T next() {
-        T element = elements[index];
-        index++;
-        return element;
+        return elements[index++];
     }
 }
